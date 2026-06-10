@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Cover Letter Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>AI Cover Letter Generator</h1>
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
+
+    <form id="coverForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Candidate Name"
+            required
+        >
+
+        <input
+            type="text"
+            id="role"
+            placeholder="Job Role"
+            required
+        >
+
+        <input
+            type="text"
+            id="company"
+            placeholder="Target Company"
+            required
+        >
+
+        <textarea
+            id="skills"
+            rows="5"
+            maxlength="500"
+            placeholder="Enter your key skills..."
+            required
+        ></textarea>
+
+        <p id="charCount">0 / 500 Characters</p>
+
+        <button type="submit">
+            Generate Cover Letter
+        </button>
+
+    </form>
+
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Generating Cover Letter...</p>
+    </div>
+
+    <div class="output">
+
+        <div class="output-header">
+            <h2>Generated Letter</h2>
+
+            <div class="actions">
+                <button id="copyBtn">
+                    Copy
+                </button>
+
+                <button id="downloadBtn">
+                    Download TXT
+                </button>
+
+                <button id="regenerateBtn">
+                    Regenerate
+                </button>
+            </div>
+        </div>
+
+        <textarea
+            id="result"
+            rows="14"
+            readonly
+        ></textarea>
+
+        <p id="wordCount">
+            Word Count: 0
+        </p>
+
+    </div>
+
+</div>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
