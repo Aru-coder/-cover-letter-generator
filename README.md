@@ -6,11 +6,10 @@ This project was developed for the Prodesk IT Sprint 04 assignment and demonstra
 
 ## Live Website
 
-(Add your Vercel deployment link here)
+https://cover-letter-generator-2-git-main-anushka10.vercel.app/
 
 ## GitHub Repository
-
-(Add your GitHub repository link here)
+https://github.com/Aru-coder/-cover-letter-generator
 
 ## Features
 
